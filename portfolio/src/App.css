@@ -37,10 +37,18 @@
   }
 }
 
+a {
+  color: white;
+  font-size: calc(1px + 2vmin);
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 1em;
   text-align: center;
   text-decoration: none;
 }
@@ -57,4 +65,45 @@
 .fa-linkedin-simple {
   background: #3B5998;
   color: red;
-} 
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+}
+
+.wrapper > * {
+  grid-column: col-start / span 12;
+}
+
+.menu_item {
+  padding: 20px;
+  text-align: center;
+}
+
+#menu_bar a:hover {
+  font-size: calc(3px + 2vmin);
+  background:rgba(255,255,255, 0.1);
+}
+
+@media (max-width: 700px) {
+  .menu_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  a {
+    font-size: calc(7px + 2vmin);
+  }
+}
+
+
+@media (min-width: 700px) {
+  .main_nav {
+    grid-column: col-start / span 12;
+    grid-row: 1;
+  }
+}

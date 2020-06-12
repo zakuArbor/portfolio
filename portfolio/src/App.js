@@ -6,8 +6,11 @@ function LinkItem(props) {
   if (props.type == 'social') {
     var class_names = "social_item " + props.icon_name;
   }
+  else if (props.type == 'menu') {
+    var class_names = "menu_item";
+  }
   return (
-    <a href ={props.link} className={class_names}>
+    <a href ={props.link} className={class_names}>{props.text}
     </a>
   );
 }
@@ -43,23 +46,24 @@ class SocialBar extends React.Component {
     return (
       <div>
         {this.social.map(function (obj, i) {
-          return <LinkItem icon_name={obj.icon_name} link={obj.link} key={i} type='social'/>
+          return <LinkItem icon_name={obj.icon_name} link={obj.link} key={i} type='social' text=''/>
         })}  
       </div>
     );
   }
 }
 
+
 class MenuBar extends React.Component {
   constructor(props) {
     super(props);
-    this.social = [
+    this.menus = [
         {
           "menu_name": "ABOUT",
           "link": "#about"
         },
         {
-          "icon_name": "SKILLS",
+          "menu_name": "SKILLS",
           "link": "#skills"
         },
         {
@@ -67,7 +71,7 @@ class MenuBar extends React.Component {
           "link": "#experiences"
         },
         {
-          "icon_name": "PROJECTS",
+          "menu_name": "PROJECTS",
           "link": "#projects"
         },
       ];
@@ -75,11 +79,11 @@ class MenuBar extends React.Component {
 
   render() {
     return (
-      <div>
-        {this.social.map(function (obj, i) {
-          return <LinkItem icon_name={obj.icon_name} link={obj.link} key={i} type='social'/>
+      <ul>
+        {this.menus.map(function (obj, i) {
+          return <LinkItem text={obj.menu_name} link={obj.link} key={i} type='menu'/>
         })}  
-      </div>
+      </ul>
     );
   }
 }
@@ -89,11 +93,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div id ="social_bar">
-          <SocialBar/>
+        
+        <div class = "wrapper">
+          <nav id = "social_bar">
+            <SocialBar/>
+          </nav>
+          <nav id = "menu_bar" class="main_nav">
+            <MenuBar/>
+          </nav>
         </div>
       </header>
     </div>
