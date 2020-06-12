@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  //min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,6 +87,32 @@ a {
   background:rgba(255,255,255, 0.1);
 }
 
+#about {
+  background: #3f445a;
+}
+
+#skill {
+  background: #495069;
+}
+
+#experience {
+  background: #363b4e;
+}
+
+.page {
+  padding: 5px;
+  padding-top: 20px;
+  color: white;
+  min-height: 20vh;
+}
+
+.title {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: calc(12px + 2vmin);
+  font-weight: bold;
+}
+
 @media (max-width: 700px) {
   .menu_item {
     display: flex;
@@ -105,5 +131,13 @@ a {
   .main_nav {
     grid-column: col-start / span 12;
     grid-row: 1;
+  }
+
+  .content {
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    text-align: left;
   }
 }
