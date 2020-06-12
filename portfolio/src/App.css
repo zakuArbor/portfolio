@@ -39,11 +39,9 @@
 
 a {
   color: white;
-  font-size: calc(1px + 2vmin);
   text-decoration: none;
   letter-spacing: 3px;
 }
-
 
 .fa {
   padding: 20px;
@@ -82,8 +80,16 @@ a {
   text-align: center;
 }
 
+#social_bar {
+  padding-bottom: 15px;
+}
+
+#menu_bar ul {
+  margin-top: 0;
+}
+
 #menu_bar a:hover {
-  font-size: calc(3px + 2vmin);
+  font-size: 120%;
   background:rgba(255,255,255, 0.1);
 }
 
@@ -99,9 +105,29 @@ a {
   background: #363b4e;
 }
 
+#project {
+  background: #3f445a;
+}
+
+#project_footer {
+  text-align: center;
+  padding-top: 40px;
+  margin: 15px;
+}
+
+#project_footer a {
+  font-size: 120%;
+  text-decoration: underline;
+}
+
+#project_footer a:hover{
+  color: #a496e8;
+}
+
 .page {
   padding: 5px;
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: white;
   min-height: 20vh;
 }
@@ -109,11 +135,38 @@ a {
 .title {
   text-align: center;
   letter-spacing: 5px;
-  font-size: calc(12px + 2vmin);
+  font-size: 2em;
   font-weight: bold;
 }
 
+.job {
+  position: relative; 
+  padding: 15px;
+}
+
+.job_title {
+  letter-spacing: 5px;
+  font-size: 1.6em;
+}
+
+.project_title {
+  letter-spacing: 5px;
+  font-size: 1.6em;
+}
+
+.job_date {
+  font-size: 80%;
+}
+
+.project_icons {
+  text-align: center;
+}
+
 @media (max-width: 700px) {
+  .content {
+    padding-top: 30px;
+  }
+
   .menu_item {
     display: flex;
     justify-content: space-between;
@@ -122,7 +175,11 @@ a {
   }
   
   a {
-    font-size: calc(7px + 2vmin);
+    font-size: 120%;
+  }
+
+  .job_desc {
+    text-align: left;
   }
 }
 
@@ -133,11 +190,16 @@ a {
     grid-row: 1;
   }
 
+  .job_title {
+      line-height: 70%;
+  }
+
   .content {
     position: relative;
     margin: auto;
     margin-top: 40px;
     width: 80%;
     text-align: left;
+    font-size: 1.2em;
   }
 }
