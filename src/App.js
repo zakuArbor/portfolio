@@ -1,5 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './images/logo.svg';
+import c_logo from './images/c-logo.png';
+import html_logo from './images/html-logo.png';
 import './App.css';
 
 function LinkItem(props) {
@@ -9,6 +11,9 @@ function LinkItem(props) {
   }
   else if (props.type === 'menu') {
     class_names = "menu_item";
+  }
+  else if (props.type === 'project') {
+    class_names = "project_icon " + props.icon_name;
   }
   return (
     <a href ={props.link} className={class_names}>{props.text}
@@ -215,16 +220,36 @@ function ProjectItem(props) {
         <p className = "project_desc">{props.desc}</p>
         <p className = "project_tools"><b>Languages & Tools</b>: {props.tools}</p>
         <div className = "project_icons">
-          <LinkItem icon_name={props.github_icon} link={props.github_link} type='social'/>
-          <LinkItem icon_name={props.paper_icon} link={props.paper_link} type='social'/>
+          <LinkItem icon_name={props.github_icon} link={props.github_link} type='project'/>
+          <LinkItem icon_name={props.paper_icon} link={props.paper_link} type='project'/>
         </div>
     </div>
   );
 }
 
+var ProjectIcon = ({clickHandler, id, proj_icon}) => (
+    <img className = "project_type" onClick ={clickHandler} src = {proj_icon} alt={id}/>
+);
+
 class ProjectPage extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+        "c_proj": true,
+        "web_proj": false
+    };
+
+    this.proj_icons = [
+      { 
+        "id": "c_proj", 
+        "logo": c_logo
+      },
+      {
+        "id": "web_proj",
+        "logo": html_logo
+      }
+    ];
+
     this.projects = [
       {
         "title": "ProxyAuth (A security Capstone Project)",
@@ -267,10 +292,37 @@ class ProjectPage extends React.Component {
         }
       }
     ]; 
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick = (id) => {
+    console.log(id);
+    let delta_state = {};
+    for (let [key, value] of Object.entries(this.state)) {
+      if (key === id) { 
+        delta_state[key] = true;
+      }
+      else {
+        delta_state[key] = false;
+      }
+    }
+    console.log(delta_state);
+    //this.setState();
   }
 
   render() {
+    var project_types = [];
+    for (var i = 0; i < this.proj_icons.length; i++) {
+      let proj_obj = this.proj_icons[i];
+      project_types.push(<ProjectIcon key = {proj_obj["id"]} clickHandler = {()=>{this.handleClick(proj_obj["id"])}} id = {proj_obj["id"]} proj_icon = {proj_obj["logo"]}/>);
+    }
     return (
+      <div>
+      <div className="project_type_icons">
+        {
+          project_types
+        }
+      </div>
       <div className="content">
       {
         this.projects.map(function (obj, i) {
@@ -279,7 +331,7 @@ class ProjectPage extends React.Component {
           if (i === 2) {
             hr = () => { return (<span></span>)};
           }
-          console.log(obj.github);
+
           return <div key = {key}>
               <ProjectItem title={obj.title} desc={obj.desc}  tools={obj.tools}
                 github_icon={obj.github.icon_name} github_link={obj.github.link}
@@ -290,6 +342,7 @@ class ProjectPage extends React.Component {
         })
       }
       <div id = "project_footer"><a href = "https://github.com/zakuArbor">Any many more on my github page</a></div>     
+      </div>
       </div>
     );
   }
@@ -318,6 +371,10 @@ function App() {
         <nav>
           <SocialBar/>
         </nav>
+      </div>
+      <div className="footer">
+        <a href="https://iconscout.com/icons/c-programming" target="_blank" rel="noopener noreferrer">C programming Icon</a> on <a href="https://iconscout.com">Iconscout</a>
+        <a href="https://iconscout.com/icons/html-file" target="_blank" rel="noopener noreferrer">Html File Icon</a> by <a href="https://iconscout.com/contributors/dinosoftlabs">Dinosoft Lab</a> on <a href="https://iconscout.com">Iconscout</a>
       </div>
     </div>
   );

@@ -45,7 +45,6 @@ a {
 
 .fa {
   padding: 20px;
-  font-size: 30px;
   width: 1em;
   text-align: center;
   text-decoration: none;
@@ -56,8 +55,8 @@ a {
 }
 
 .social_item {
-  //background: #3B5998;
   color: white;
+  font-size: 30px;
 }
 
 .fa-linkedin-simple {
@@ -89,7 +88,6 @@ a {
 }
 
 #menu_bar a:hover {
-  font-size: 120%;
   background:rgba(255,255,255, 0.1);
 }
 
@@ -160,6 +158,23 @@ a {
 
 .project_icons {
   text-align: center;
+  font-size: 50px;
+}
+
+.project_type_icons {
+  padding-top:30px;
+}
+
+.project_type {
+  width: 100px;
+}
+
+.project_type {
+  width: 100px;
+}
+
+.project_type:nth-child(odd) {
+  margin-right: 50px;
 }
 
 @media (max-width: 700px) {
@@ -181,6 +196,11 @@ a {
   .job_desc {
     text-align: left;
   }
+
+  .social_item {
+    font-size: 30px;
+  }
+
 }
 
 
