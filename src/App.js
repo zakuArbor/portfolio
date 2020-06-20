@@ -365,10 +365,7 @@ class ProjectPage extends React.Component {
       {
         this.projects[this.state.display].map(function (obj, i) {
           var key = "proj" + i; //this is to avoid hild unique key prop warning
-          var hr = () => { return (<hr/>)};
-          if (i === 2) {
-            hr = () => { return (<span></span>)};
-          }
+          var hr = () => { return (<hr/>)};   
 
           return <div key = {key}>
               <ProjectItem title={obj.title} desc={obj.desc}  tools={obj.tools}
