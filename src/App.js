@@ -235,8 +235,7 @@ class ProjectPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        "c_proj": true,
-        "web_proj": false
+        "display": "c_proj"
     };
 
     this.proj_icons = [
@@ -250,64 +249,103 @@ class ProjectPage extends React.Component {
       }
     ];
 
-    this.projects = [
-      {
-        "title": "ProxyAuth (A security Capstone Project)",
-        "desc": "A continuous authentication that aims to replace password login on your desktop by using your smartphone as an authentication device via Bluetooth. Since ProxyAuth uses continuous authentication scheme, you do not need to worry about leaving your computer unlocked. The computer will lock if it cannot detect the device within its vincinty.",
-        "tools": "C, PAM, Bluetooth Programming, D-Bus, Kotlin Android Programming",
-        "github": {
-            "icon_name": "fa fa-github",
-            "link": "https://github.com/zakuArbor/proxyAuth/"
+    this.projects = {
+      "c_proj": [
+        {
+          "title": "ProxyAuth (A security Capstone Project)",
+          "desc": "A continuous authentication that aims to replace password login on your desktop by using your smartphone as an authentication device via Bluetooth. Since ProxyAuth uses continuous authentication scheme, you do not need to worry about leaving your computer unlocked. The computer will lock if it cannot detect the device within its vincinty.",
+          "tools": "C, PAM, Bluetooth Programming, D-Bus, Kotlin Android Programming",
+          "github": {
+              "icon_name": "fa fa-github",
+              "link": "https://github.com/zakuArbor/proxyAuth/"
+          },
+          "paper": {
+              "icon_name": "fa fa-file-pdf-o",
+              "link": "https://github.com/zakuArbor/proxyAuth/blob/master/kim_proxyauth_paper.pdf"
+          }
         },
-        "paper": {
-            "icon_name": "fa fa-file-pdf-o",
-            "link": "https://github.com/zakuArbor/proxyAuth/blob/master/kim_proxyauth_paper.pdf"
+        {
+          "title": "A Network text-based Tic Tac Toe",
+          "desc": "A tic tac toe game implemented in C that utilizes sockets to allow play over the network. A good refresher on sockets.",
+          "tools": "C, sockets",
+          "github": {
+              "icon_name": "fa fa-github",
+              "link": "https://github.com/zakuArbor/ticTacToeC/"
+          },
+          "paper": {
+              "icon_name": "",
+              "link": ""
+          }
         }
-      },
-      {
-        "title": "PAR: Progress and Report Card Generator",
-        "desc": "A web based application designed for teachers to create progress report cards. A semester long High School project that aimed to replace the current program used by the school. (Unfortunately the administration did not adopt our product)",
-        "tools": "PHP, SQL, HTML, CSS, Javascript",
-        "github": {
-            "icon_name": "fa fa-github",
-            "link": "https://github.com/zakuArbor/PAR"
+      ],
+      "web_proj": [
+        {
+          "title": "PAR: Progress and Report Card Generator",
+          "desc": "A web based application designed for teachers to create progress report cards. A semester long High School project that aimed to replace the current program used by the school. (Unfortunately the administration did not adopt our product)",
+          "tools": "PHP, SQL, HTML, CSS, Javascript",
+          "github": {
+              "icon_name": "fa fa-github",
+              "link": "https://github.com/zakuArbor/PAR"
+          },
+          "paper": {
+              "icon_name": "fa fa-file-pdf-o",
+              "link": "https://github.com/zakuArbor/PAR/blob/master/final_summative_report.pdf"
+          }
         },
-        "paper": {
-            "icon_name": "fa fa-file-pdf-o",
-            "link": "https://github.com/zakuArbor/PAR/blob/master/final_summative_report.pdf"
-        }
-        
-      },
-      {
-        "title": "A Network text-based Tic Tac Toe",
-        "desc": "A tic tac toe game implemented in C that utilizes sockets to allow play over the network. A good refresher on sockets.",
-        "tools": "C, sockets",
-        "github": {
-            "icon_name": "fa fa-github",
-            "link": "https://github.com/zakuArbor/ticTacToeC/"
+        {
+          "title": "Portfolio",
+          "desc": "This very website you are looking at is made using React. Displays some of my projects, skills and knowledge",
+          "tools": "React, HTML, CSS, Javascript",
+          "github": {
+              "icon_name": "fa fa-github",
+              "link": "https://github.com/zakuArbor/portfolio/"
+          },
+          "paper": {
+              "icon_name": "",
+              "link": ""
+          }
         },
-        "paper": {
-            "icon_name": "",
-            "link": ""
-        }
-      }
-    ]; 
+        {
+          "title": "FreeCodeCamp Projects",
+          "desc": "A repository for most of the projects I worked on from the FreeCodeCamp Curriculum which includes a Random Quote Generator, Calculator, Pomodoro Clock, Tic Tac Toe and Simon Game",
+          "tools": "HTML, CSS, Javascript, AJAX",
+          "github": {
+              "icon_name": "fa fa-github",
+              "link": "https://github.com/zakuArbor/FreeCodeCampAssignments/"
+          },
+          "paper": {
+              "icon_name": "",
+              "link": ""
+          }
+        },
+        {
+          "title": "votingApp-fcc",
+          "desc": "Create and vote on Polls. My first MEAN application",
+          "tools": "Node.js, MongoDB, HTML, CSS, Javascript, AJAX",
+          "github": {
+              "icon_name": "fa fa-github",
+              "link": "https://github.com/zakuArbor/votingApp-fcc"
+          },
+          "paper": {
+              "icon_name": "",
+              "link": ""
+          }
+        } 
+      ]
+    }; 
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = (id) => {
     console.log(id);
     let delta_state = {};
-    for (let [key, value] of Object.entries(this.state)) {
+    for (let key of Object.keys(this.projects)) {
       if (key === id) { 
-        delta_state[key] = true;
-      }
-      else {
-        delta_state[key] = false;
+        this.setState({display: key});
+        break;
       }
     }
-    console.log(delta_state);
-    //this.setState();
+    console.log(this.state);
   }
 
   render() {
@@ -325,7 +363,7 @@ class ProjectPage extends React.Component {
       </div>
       <div className="content">
       {
-        this.projects.map(function (obj, i) {
+        this.projects[this.state.display].map(function (obj, i) {
           var key = "proj" + i; //this is to avoid hild unique key prop warning
           var hr = () => { return (<hr/>)};
           if (i === 2) {
@@ -373,7 +411,7 @@ function App() {
         </nav>
       </div>
       <div className="footer">
-        <a href="https://iconscout.com/icons/c-programming" target="_blank" rel="noopener noreferrer">C programming Icon</a> on <a href="https://iconscout.com">Iconscout</a>
+        <a href="https://iconscout.com/icons/c-programming">C programming Icon</a> on <a href="https://iconscout.com">Iconscout</a><br/>
         <a href="https://iconscout.com/icons/html-file" target="_blank" rel="noopener noreferrer">Html File Icon</a> by <a href="https://iconscout.com/contributors/dinosoftlabs">Dinosoft Lab</a> on <a href="https://iconscout.com">Iconscout</a>
       </div>
     </div>
