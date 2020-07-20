@@ -132,6 +132,7 @@ function AboutPage() {
     </p>
     <p>I initially self-studied programming on my free time around Middle School and High School particularly focusing on Web Design (Non Javascript Based Technologies) but got interested in Systems after being introduced to Linux.</p>
     <p>My hobbies outside of learning about Computers is to read manga and books, particularly Sci-fi Light Novels.</p>
+    <p>I am currently working at IBM and I am currently enjoying utilizing their education resources to study on various subjects unrelated to work.</p>
     </div>
   );
 }
@@ -168,9 +169,14 @@ class ExperiencePage extends React.Component {
     super(props);
     this.jobs = [
       {
-        "title": "Db2 Software Developer @ IBM",
-        "date": "To start at July 6",
-        "tasks": []
+        "title": "Db2 'Software Developer' @ IBM",
+        "date": "July 6 - Current",
+        "tasks": [
+          "I am more akin to DevOps Developer but on paper, I am a software developer for some odd reason",
+          "Create automation tools for development using Github Apps",
+          "Improve Build Infrastructure and automation tools",
+          "Identify and debug Infrastrcture and Automation Tools" 
+        ]
       },
       {
         "title": "Db2 Build Infrastructure Intern @ IBM",
@@ -290,6 +296,19 @@ class ProjectPage extends React.Component {
           "paper": {
               "icon_name": "fa fa-file-pdf-o",
               "link": "https://github.com/zakuArbor/PAR/blob/master/final_summative_report.pdf"
+          }
+        },
+        {
+          "title": "UTM Academic Performance Visualizer",
+          "desc": "Feed in your depression or ego on your academic performance over the years through various charts and how you performed compared to your peers",
+          "tools": "Chart.js, Perl, Javascript, HTML, CSS",
+          "github": {
+              "icon_name": "fa fa-github",
+              "link": "https://github.com/zakuArbor/MiniScripts/tree/master/kim_UTM_course_visualizer"
+          },
+          "paper": {
+              "icon_name": "",
+              "link": ""
           }
         },
         {
