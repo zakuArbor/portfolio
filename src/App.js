@@ -132,7 +132,7 @@ function AboutPage() {
     </p>
     <p>I initially self-studied programming on my free time around Middle School and High School particularly focusing on Web Design (Non Javascript Based Technologies) but got interested in Systems after being introduced to Linux.</p>
     <p>My hobbies outside of learning about Computers is to read manga and books, particularly Sci-fi Light Novels.</p>
-    <p>I am currently working at IBM and I am currently enjoying utilizing their education resources to study on various subjects unrelated to work.</p>
+    <p>I am currently working at IBM where I am currently enjoying utilizing their education resources to study on various subjects unrelated to work on my spare time.</p>
     </div>
   );
 }
@@ -300,7 +300,7 @@ class ProjectPage extends React.Component {
         },
         {
           "title": "UTM Academic Performance Visualizer",
-          "desc": "Feed in your depression or ego on your academic performance over the years through various charts and how you performed compared to your peers",
+          "desc": "Feed in your depression or ego on your academic performance over the years at UTM. Compare your performance over the years and also see how you did compared to your peers through various charts",
           "tools": "Chart.js, Perl, Javascript, HTML, CSS",
           "github": {
               "icon_name": "fa fa-github",
