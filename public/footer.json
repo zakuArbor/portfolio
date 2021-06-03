@@ -1,0 +1,16 @@
+{
+    "social": [
+        {
+            "icon_name": "fa fa-github",
+            "link": "https://github.com/zakuArbor"
+        },
+        {
+            "icon_name": "fa fa-linkedin",
+            "link": "http://www.linkedin.com/in/ju-hong-kim-zaku"
+        },
+        {
+            "icon_name": "fa fa-wordpress",
+            "link": "https://zakuarbor.github.io/blog/"
+        }
+    ]
+}
