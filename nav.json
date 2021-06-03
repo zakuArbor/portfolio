@@ -1,0 +1,42 @@
+{
+    "social": [
+        {
+          "icon_name": "fa fa-github",
+          "link": "https://github.com/zakuArbor"
+        },
+        {
+          "icon_name": "fa fa-linkedin",
+          "link": "http://www.linkedin.com/in/ju-hong-kim-zaku"
+        },
+        {
+          "icon_name": "fa fa-wordpress",
+          "link": "https://zakuarbor.github.io/blog"
+        },
+        {
+          "icon_name": "fa fa-youtube",
+          "link": "https://www.youtube.com/user/nabimoon1234"
+        },
+        {
+          "icon_name": "fa fa-instagram",
+          "link": "https://www.instagram.com/misthermit/"
+        }
+    ],
+    "pages": [
+        {
+          "menu_name": "ABOUT",
+          "link": "#about"
+        },
+        {
+          "menu_name": "SKILLS",
+          "link": "#skill"
+        },
+        {
+          "menu_name": "EXPERIENCES",
+          "link": "#experience"
+        },
+        {
+          "menu_name": "PROJECTS",
+          "link": "#project"
+        }
+    ]
+}
