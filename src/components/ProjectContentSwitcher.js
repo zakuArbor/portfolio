@@ -8,7 +8,7 @@ const ProjectContextSwitcher = ({handler}) => {
             {
                 [{"icon": "c_proj", "logo": cLogo}, {"icon": "web_proj", "logo": htmlLogo}].map(({icon, logo}) => {
                     let clickHandler = ()=>{handler(icon)};
-                    return <img className = "project_type" onClick ={clickHandler} src = {logo} alt={icon}/>
+                    return <img className = "project_type" key = {icon} onClick ={clickHandler} src = {logo} alt={icon}/>
                 })
             }
         </div>
