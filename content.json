@@ -1,5 +1,23 @@
 {
+    "education": [
+      {
+        "university": "Carleton Universty",
+        "program": "Mathematics and Physics",
+        "date": "September 2021 - Present"
+      },
+      {
+        "university": "University of Toronto Mississauga",
+        "program": "Computer Science",
+        "date": "September 2015 - June 2020"
+      }
+    ],
     "experiences": [
+      {
+        "title": "QNX Integration Student Software Developer @ Blackberry",
+        "date": "January 10 2021 - Present",
+        "tasks": ["TBD"],
+        "skills":"TBD"
+      },
       {
         "title": "Db2 Build Infrastructure DevOps @ IBM",
         "date": "July 2020 - August 2021 (1 year and 1 month)",
