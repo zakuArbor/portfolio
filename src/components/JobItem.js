@@ -1,6 +1,6 @@
 import React from 'react';
 
-const JobItem = ({ title, date, tasks }) => {
+const JobItem = ({ title, date, tasks, skills }) => {
     return (
       <div className = "job">
         <p className = "job_title">{title}</p>
@@ -11,6 +11,11 @@ const JobItem = ({ title, date, tasks }) => {
           return <li key = {key}>{task}</li>
         })}  
         </ul>
+        {skills.length !== 0 ?
+          <p className = "job_skills"><b>Languages and Tools:</b> { skills } </p>
+          :
+          null
+      }
       </div>
     );
   }

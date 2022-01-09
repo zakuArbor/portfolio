@@ -208,7 +208,7 @@ a {
     font-size: 120%;
   }
 
-  .job_desc {
+  .job_desc, job_skills {
     text-align: left;
   }
 
