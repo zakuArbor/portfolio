@@ -111,6 +111,10 @@ a {
   background: #3f445a;
 }
 
+#education {
+  background: #363b4e;
+}
+
 #project_footer {
   text-align: center;
   padding-top: 40px;
@@ -156,6 +160,11 @@ a {
   font-size: 1.6em;
 }
 
+.edu_title{
+  letter-spacing: 2px;
+  font-size: 1.6em;
+}
+
 .job_date {
   font-size: 80%;
 }
@@ -192,6 +201,35 @@ a {
   margin-right: 50px;
 }
 
+.back-to-top-wrapper {
+  position: absolute;
+  top: 100vh;
+  right: 2.5rem;
+  bottom: -5em;
+  width: 3em;
+  pointer-events: none;
+}
+
+.back-to-top-link {
+  position: fixed;
+  pointer-events: all;
+  top: calc(100vh - 5rem);
+
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 0.25rem;
+
+  background-color: white; 
+}
+
+/*Credits for Scroll Up Style to: https://moderncss.dev/pure-css-smooth-scroll-back-to-top/ */
+
 @media (max-width: 700px) {
   .page-content {
     padding-top: 30px;
@@ -215,7 +253,6 @@ a {
   .social_item {
     font-size: 30px;
   }
-
 }
 
 
@@ -237,4 +274,15 @@ a {
     text-align: left;
     font-size: 1.2em;
   }
+
+  .back-to-top-wrapper {
+    right: 4rem;
+  }
 }
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
