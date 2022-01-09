@@ -3,7 +3,7 @@ import JobItem from '../components/JobItem';
 
 const ExperiencePage = ({data}) => {
     return (
-        <div class = "page-content">
+        <div className = "page-content">
         {   
             (data !== undefined) ? (
                 data.map(function (obj, i) {
@@ -12,7 +12,7 @@ const ExperiencePage = ({data}) => {
                 if (i === 2) {
                     hr = () => { return (<span></span>)}
                 }
-                return <div key = {key}><JobItem title={obj.title} date={obj.date} tasks={obj.tasks}/>{hr()}</div>
+                return <div key = {key}><JobItem title={obj.title} date={obj.date} tasks={obj.tasks} skills={obj.skills}/>{hr()}</div>
             })): (<Fragment></Fragment>)
         }  
         </div>

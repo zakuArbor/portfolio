@@ -13,7 +13,7 @@ const ProjectPage = ({data: {c_proj, web_proj}}) => {
     return (
         <Fragment>
             <ProjectContextSwitcher handler = {handleClick}/>
-            <div class = "page-content">
+            <div className = "page-content">
             {
                 (projects[display] !== undefined) ?
                     <div className="content">

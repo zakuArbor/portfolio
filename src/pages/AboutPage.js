@@ -2,7 +2,7 @@ import { React} from 'react';
 
 const AboutPage = () => {
     return (
-        <div class = "page-content">
+        <div className = "page-content">
             <p>Hello World!</p>
             <p>My name is Ju Hong Kim and I am a computer enthusiast. I love learning new things and expanding my knowledge.  
             My background is in Computer Science and I am particularly interested in reading and learning about Systems Programming 
