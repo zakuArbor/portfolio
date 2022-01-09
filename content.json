@@ -1,14 +1,14 @@
 {
     "experiences": [
       {
-        "title": "Db2 'Software Developer' @ IBM",
-        "date": "July 6 - Current",
+        "title": "Db2 Build Infrastructure DevOps @ IBM",
+        "date": "July 2020 - August 2021 (1 year and 1 month)",
         "tasks": [
-          "I am more akin to DevOps Developer but on paper, I am a software developer for some odd reason",
-          "Create automation tools for development using Github Apps",
-          "Improve Build Infrastructure and automation tools",
-          "Identify and debug Infrastrcture and Automation Tools" 
-        ]
+          "Increase productivity of developers by developing, debugging and improving build infrastructure and automation tools",
+          "Migrate insecure legacy systems to more secure infrastructues",
+          "Teach and mentor interns and junior employees"
+        ],
+        "skills": "Node.js, Perl, Python, C, Git, Clearcase, and Jenkins"
       },
       {
         "title": "Db2 Build Infrastructure Intern @ IBM",
@@ -18,7 +18,8 @@
           "Improve Build Infrastructure and automation tools",
           "Debug code and resolve environment issues",
           "Supervise and aid in migrating an internal production server"
-          ]
+          ],
+        "skills": "Perl, C, PHP, Clearcase, Jenkins, and Buildforge"
       },
       {
         "title": "HighSchool Student Assisstance @ Ericsson",
@@ -27,7 +28,8 @@
           "Server Migration and Configuration",
           "Managing servers and programs and debug crashes",
           "Debug Programs"
-          ]
+          ],
+        "skills": ""
       }
     ],
     "projects": {
