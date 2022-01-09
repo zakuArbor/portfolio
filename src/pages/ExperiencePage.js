@@ -9,7 +9,7 @@ const ExperiencePage = ({data}) => {
                 data.map(function (obj, i) {
                 var key = "exp" + i; //this is to avoid hild unique key prop warning
                 var hr = () => { return (<hr/>)};
-                if (i === 2) {
+                if (i + 1 === data.length) {
                     hr = () => { return (<span></span>)}
                 }
                 return <div key = {key}><JobItem title={obj.title} date={obj.date} tasks={obj.tasks} skills={obj.skills}/>{hr()}</div>

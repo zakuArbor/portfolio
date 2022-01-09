@@ -37,6 +37,10 @@
         {
           "menu_name": "PROJECTS",
           "link": "#project"
+        },
+        {
+          "menu_name": "EDUCATION",
+          "link": "#education"
         }
     ]
 }

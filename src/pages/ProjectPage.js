@@ -21,7 +21,6 @@ const ProjectPage = ({data: {c_proj, web_proj}}) => {
                         projects[display].map(function (obj, i) {
                         var key = "proj" + i; //this is to avoid hild unique key prop warning
                         var hr = () => { return (<hr/>)};   
-                        console.log(obj);
                         return <div key = {key}>
                             <ProjectItem data = {obj} />
                             {hr()}
