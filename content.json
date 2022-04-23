@@ -13,10 +13,13 @@
     ],
     "experiences": [
       {
-        "title": "QNX Integration Student Software Developer @ Blackberry",
-        "date": "January 10 2021 - Present",
-        "tasks": ["TBD"],
-        "skills":"TBD"
+        "title": "QNX Software Support @ Blackberry QNX",
+        "date": "January 2021 - April 2021",
+        "tasks": [
+          "Assist clients on their technical issues and design questions relating to QNX, POSIX C, and Momentics IDE",
+          "Technical issues ranges from compilation, API/utility usage, networking, and debugging crashes"
+        ],
+        "skills":"QNX, C, GDB, and Momentics IDE"
       },
       {
         "title": "Db2 Build Infrastructure DevOps @ IBM",
@@ -63,7 +66,7 @@
           "paper": {
               "icon_name": "fa fa-file-pdf-o",
               "link": "https://github.com/zakuArbor/proxyAuth/blob/master/kim_proxyauth_paper.pdf"
-          }
+          }            
         },
         {
           "title": "A Network text-based Tic Tac Toe",
@@ -91,19 +94,6 @@
             "paper": {
                 "icon_name": "fa fa-file-pdf-o",
                 "link": "https://github.com/zakuArbor/PAR/blob/master/final_summative_report.pdf"
-            }
-          },
-          {
-            "title": "UTM Academic Performance Visualizer",
-            "desc": "Feed in your depression or ego on your academic performance over the years at UTM. Compare your performance over the years and also see how you did compared to your peers through various charts",
-            "tools": "Chart.js, Perl, Javascript, HTML, CSS",
-            "github": {
-                "icon_name": "fa fa-github",
-                "link": "https://github.com/zakuArbor/MiniScripts/tree/master/kim_UTM_course_visualizer"
-            },
-            "paper": {
-                "icon_name": "",
-                "link": ""
             }
           },
           {
