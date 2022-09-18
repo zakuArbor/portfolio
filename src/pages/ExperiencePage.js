@@ -12,7 +12,9 @@ const ExperiencePage = ({data}) => {
                 if (i + 1 === data.length) {
                     hr = () => { return (<span></span>)}
                 }
-                return <div key = {key}><JobItem title={obj.title} date={obj.date} tasks={obj.tasks} skills={obj.skills}/>{hr()}</div>
+                let skills = "skills" in obj ? obj.skills : "";
+                let tasks = "tasks" in obj ? obj.tasks : {};
+                return <div key = {key}><JobItem title={obj.title} date={obj.date} tasks={tasks} skills={skills}/>{hr()}</div>
             })): (<Fragment></Fragment>)
         }  
         </div>

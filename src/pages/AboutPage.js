@@ -4,7 +4,7 @@ const AboutPage = () => {
     return (
         <div className = "page-content">
             <p>Hello World!</p>
-            <p>My name is Ju Hong Kim and I am a computer enthusiast. I love learning new things and expanding my knowledge.  
+            <p>My name is Ju Hong Kim and I am a computer enthusiast and a student. I love learning new things and expanding my knowledge.  
             My background is in Computer Science and I am particularly interested in reading and learning about Systems Programming 
             (though I am quite lacking in experience and knowledge). My current goals are to self-study more in depth about Operating Systems, 
             learn the basics of embedded programming, and work on old and new projects to improve my skills.

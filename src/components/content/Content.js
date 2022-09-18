@@ -40,8 +40,8 @@ const Content = () => {
            <Page id = "experience" title = "EXPERIENCES" component = {ExperiencePage} data = {experiences}/>
            <Page id = "project" title = "PROJECTS" component = {ProjectPage} data = {projects}/>
            <Page id = "education" title = "EDUCATION" component = {EducationPage} data = {education}/>
-           <div class="back-to-top-wrapper">
-               <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+           <div className="back-to-top-wrapper">
+               <a href="#top" className="back-to-top-link" aria-label="Scroll to Top">🔝</a>
            </div>
        </Fragment>
    );
