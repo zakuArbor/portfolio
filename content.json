@@ -13,9 +13,20 @@
     ],
     "experiences": [
       {
-        "title": "Teaching Assistant @CarletonU",
-        "date": "September 2022 - Present",
-        "tasks":[],
+        "title": "Student Systems Software Developer @ Blackberry",
+        "date": "May 2023 - August 2023",
+        "tasks": [],
+        "skills": ""
+      },
+      {
+        "title": "Teaching Assistant @ CarletonU",
+        "date": "September 2022 - April 2023",
+        "tasks":[
+          "MATH1004 - Calculus for Engineering or Physics: Fall 2022",
+          "MATH1104 - Linear Algebra for Engineering or Science: Winter 2023",
+          "MATH1152 - Introductory Algebra I: Fall 2022",
+          "MATH2107 - Linear Algebra Learning Assistant (MSLap): Fall 2022 - Winter 2023"
+        ],
         "skills": ""
       },
       {
