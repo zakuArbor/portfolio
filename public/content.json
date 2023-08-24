@@ -15,8 +15,8 @@
       {
         "title": "Student Systems Software Developer @ Blackberry",
         "date": "May 2023 - August 2023",
-        "tasks": [],
-        "skills": ""
+        "tasks": ["Investigated the feasibility, benefits and tradeoffs of introducing Protobuf and Avro into our data pipelines", "Simplified Gitlab Pipeline configurations to increase readability and maintainability" ],
+        "skills": "C, Bash, Gitlab, Protobuf, Avro, Fluent Bit, Kafka, Ruby"
       },
       {
         "title": "Teaching Assistant @ CarletonU",
