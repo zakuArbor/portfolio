@@ -13,6 +13,22 @@
     ],
     "experiences": [
       {
+        "title": "Student Software Developer @ Ericsson",
+        "date": "May 2024 - Present",
+        "tasks": [],
+        "skills": "Linux, Java"
+      },
+      {
+        "title": "Teaching Assistant @ CarletonU",
+        "date": "September 2023 - April 2024",
+        "tasks":[
+          "MATH1004 - Calculus for Engineering or Physics: Fall 2023",
+          "MATH1104 - Linear Algebra for Engineering or Science: Winter 2024"
+        ],
+        "skills": ""
+      },
+
+      {
         "title": "Student Systems Software Developer @ Blackberry",
         "date": "May 2023 - August 2023",
         "tasks": ["Investigated the feasibility, benefits and tradeoffs of introducing Protobuf and Avro into our data pipelines", "Simplified Gitlab Pipeline configurations to increase readability and maintainability" ],
