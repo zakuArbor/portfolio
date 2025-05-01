@@ -14,15 +14,18 @@
     "experiences": [
       {
         "title": "Student Software Developer @ Ericsson",
-        "date": "May 2024 - Present",
-        "tasks": [],
-        "skills": "Linux, Java"
+        "date": "May 2024 - April 2025",
+        "tasks": [
+		"Developed an interactive dashboard to visualize resource consumption on software running on Linux-based radios, enabling the analysis of code changes on internal radio startup times, CPU, and memory consumption",
+		"Integrated an internal analytics framework to automate test failure tracking, correlating failures with known errors and enhancing visibility through Kibana dashboards"
+	],
+        "skills": "Linux, C, Java, Bash, Python"
       },
       {
         "title": "Teaching Assistant @ CarletonU",
-        "date": "September 2023 - April 2024",
+        "date": "September 2023 - Dec 2024",
         "tasks":[
-          "MATH1004 - Calculus for Engineering or Physics: Fall 2023",
+          "MATH1004 - Calculus for Engineering or Physics: Fall 2023, Winter 2024",
           "MATH1104 - Linear Algebra for Engineering or Science: Winter 2024"
         ],
         "skills": ""
