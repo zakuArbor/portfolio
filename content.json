@@ -14,15 +14,18 @@
     "experiences": [
       {
         "title": "Student Software Developer @ Ericsson",
-        "date": "May 2024 - Present",
-        "tasks": [],
-        "skills": "Linux, Java"
+        "date": "May 2024 - April 2025",
+        "tasks": [
+		"Developed an interactive dashboard to visualize resource consumption on software running on Linux-based radios, enabling the analysis of code changes on internal radio startup times, CPU, and memory consumption",
+		"Integrated an internal analytics framework to automate test failure tracking, correlating failures with known errors and enhancing visibility through Kibana dashboards"
+	],
+        "skills": "Linux, C, Java, Bash, Python"
       },
       {
         "title": "Teaching Assistant @ CarletonU",
-        "date": "September 2023 - April 2024",
+        "date": "September 2023 - Dec 2024",
         "tasks":[
-          "MATH1004 - Calculus for Engineering or Physics: Fall 2023",
+          "MATH1004 - Calculus for Engineering or Physics: Fall 2023, Winter 2024",
           "MATH1104 - Linear Algebra for Engineering or Science: Winter 2024"
         ],
         "skills": ""
@@ -31,7 +34,7 @@
       {
         "title": "Student Systems Software Developer @ Blackberry",
         "date": "May 2023 - August 2023",
-        "tasks": ["Investigated the feasibility, benefits and tradeoffs of introducing Protobuf and Avro into our data pipelines", "Simplified Gitlab Pipeline configurations to increase readability and maintainability" ],
+        "tasks": ["Developed a Protobuf plugin for Fluent Bit in C, optimizing data serialization and achieving a 50% reduction in data size,while also decreasing transmission time per message", "Optimized performance of the Protobuf plugin by leveraging Callgrind, perf, and flamegraphs for performance analysis, significantly improving execution efficiency", "Simplified Gitlab Pipeline configurations to increase readability and maintainability"],
         "skills": "C, Bash, Gitlab, Protobuf, Avro, Fluent Bit, Kafka, Ruby"
       },
       {
@@ -49,8 +52,9 @@
         "title": "QNX Software Support @ Blackberry QNX",
         "date": "January 2021 - April 2021",
         "tasks": [
-          "Assist clients on their technical issues and design questions relating to QNX, POSIX C, and Momentics IDE",
-          "Technical issues ranges from compilation, API/utility usage, networking, and debugging crashes"
+		"Delivered QNX and POSIX C debugging and design support to clients, helping resolve development blockers",
+		"Assisted with compilation, API/utility usage, networking, and debugging for QNX and POSIX C environments",
+		"Used GDB and Valgrind to debug memory and execution issues and leveraged Wireshark and tcpdump for network analysis"
         ],
         "skills":"QNX, C, GDB, and Momentics IDE"
       },
@@ -58,9 +62,9 @@
         "title": "Db2 Build Infrastructure DevOps @ IBM",
         "date": "July 2020 - August 2021 (1 year and 1 month)",
         "tasks": [
-          "Increase productivity of developers by developing, debugging and improving build infrastructure and automation tools",
-          "Migrate insecure legacy systems to more secure infrastructues",
-          "Teach and mentor interns and junior employees"
+		"Improved developer efficiency by creating Perl & Python-based build automation tools, optimizing the development pipeline",
+		"Assisted in transitioning legacy build infrastructure to a secured zone by identifying and resolving Perl & C dependenciesand adapting scripts to align with new constraints",
+		"Mentored 4 junior developers and interns, improving team efficiency and knowledge retention"
         ],
         "skills": "Node.js, Perl, Python, C, Git, Clearcase, and Jenkins"
       },
@@ -68,10 +72,9 @@
         "title": "Db2 Build Infrastructure Intern @ IBM",
         "date": "May 2018 - August 2019 (1 year and 4 months)",
         "tasks": [
-          "Ensure nightly and special builds for Db2 are released on a regular basis for Linux/Unix Platforms",
-          "Improve Build Infrastructure and automation tools",
-          "Debug code and resolve environment issues",
-          "Supervise and aid in migrating an internal production server"
+		"Managed builds across UNIX/Linux platforms running on 32/64-bit CPU architectures (x86, Itanium, PowerPC, SPARC), isolating breakages across complex multi-commit build histories",
+	"Enhanced build infrastructure and Perl-based automation tools to provide developers with stable, up-to-date code",
+	"Led server migration efforts, coordinating the setup and validation of all Perl and PHP programs to ensure smooth transition with minimal downtime and improved deployment reliability"
           ],
         "skills": "Perl, C, PHP, Clearcase, Jenkins, and Buildforge"
       },
